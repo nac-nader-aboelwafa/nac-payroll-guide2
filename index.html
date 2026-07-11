@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دليل ضريبة الأجور والمرتبات 2026 | NAC</title>
+<style>
+  :root{
+    --gold:#D4A017;
+    --gold-dark:#B8860B;
+    --black:#1A1A1A;
+    --bg:#F5F5F5;
+    --white:#FFFFFF;
+    --gray:#6b6b6b;
+    --border:#e2e2e2;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Tahoma','Segoe UI',sans-serif;
+    background:var(--bg);
+    color:var(--black);
+    display:flex;
+    min-height:100vh;
+  }
+  #sidebar{
+    width:290px;
+    background:var(--black);
+    color:var(--white);
+    flex-shrink:0;
+    padding:20px 0;
+    overflow-y:auto;
+    height:100vh;
+    position:sticky;
+    top:0;
+  }
+  #sidebar .logo{
+    text-align:center;
+    padding:10px 20px 20px;
+    border-bottom:2px solid var(--gold);
+    margin-bottom:10px;
+  }
+  #sidebar .logo h1{
+    color:var(--gold);
+    font-size:28px;
+    margin:0;
+    letter-spacing:2px;
+  }
+  #sidebar .logo p{
+    color:#ccc;
+    font-size:12px;
+    margin:5px 0 0;
+  }
+  #sidebar nav ul{list-style:none; margin:0; padding:0;}
+  #sidebar nav li{
+    padding:11px 20px;
+    cursor:pointer;
+    font-size:13.5px;
+    border-right:4px solid transparent;
+    transition:.2s;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  #sidebar nav li:hover{background:#2a2a2a;}
+  #sidebar nav li.active{
+    background:#2a2a2a;
+    border-right:4px solid var(--gold);
+    color:var(--gold);
+    font-weight:bold;
+  }
+  #sidebar nav li svg{flex-shrink:0;}
+  #main{
+    flex:1;
+    padding:40px 60px;
+    max-width:1000px;
+    margin:0 auto;
+    overflow-y:auto;
+    height:100vh;
+  }
+  .section{display:none; animation:fadeIn .3s ease;}
+  .section.active{display:block;}
+  @keyframes fadeIn{
+    from{opacity:0; transform:translateY(8px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+  h2.section-title{
+    color:var(--black);
+    border-bottom:4px solid var(--gold);
+    padding-bottom:12px;
+    margin-bottom:25px;
+    font-size:26px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  h3{color:var(--gold-dark); margin-top:25px;}
+  p, li{line-height:1.9; font-size:15.5px; color:#333;}
+  ul, ol{padding-right:20px;}
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:20px 0;
+    background:var(--white);
+    box-shadow:0 1px 4px rgba(0,0,0,.08);
+  }
+  th{background:var(--black); color:var(--gold); padding:12px; font-size:14px; text-align:right;}
+  td{padding:10px 12px; border-bottom:1px solid var(--border); font-size:14px;}
+  tr:nth-child(even){background:#fafafa;}
+  .note{
+    background:#FFF8E1;
+    border-right:4px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    border-radius:4px;
+    font-size:14.5px;
+  }
+  .warning{
+    background:#FFF3E0;
+    border-right:4px solid #e65100;
+    padding:14px 18px;
+    margin:18px 0;
+    border-radius:4px;
+    font-size:14.5px;
+  }
+  .source{
+    background:#EEF3FB;
+    border-right:4px solid #2c5aa0;
+    padding:12px 18px;
+    margin:14px 0;
+    border-radius:4px;
+    font-size:13.5px;
+    color:#2c3e50;
+  }
+  .checklist label{display:block; padding:8px 0; font-size:15px; cursor:pointer;}
+  .checklist input{margin-left:10px; transform:scale(1.2);}
+  .badge{
+    display:inline-block;
+    background:var(--gold);
+    color:var(--black);
+    padding:3px 10px;
+    border-radius:12px;
+    font-size:12px;
+    font-weight:bold;
+    margin-bottom:10px;
+  }
+  .cover{text-align:center; padding:80px 20px;}
+  .cover h1{font-size:34px; color:var(--black);}
+  .cover .gold-line{width:120px; height:4px; background:var(--gold); margin:20px auto;}
+  .cover p{color:var(--gray); font-size:16px;}
+  .nav-buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid var(--border);
+  }
+  .nav-buttons button{
+    background:var(--black);
+    color:var(--gold);
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+  }
+  .nav-buttons button:hover{background:var(--gold-dark); color:var(--black);}
+  .faq-item{
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:6px;
+    margin-bottom:10px;
+    padding:14px 18px;
+  }
+  .faq-item strong{color:var(--gold-dark);}
+  @media(max-width:800px){
+    body{flex-direction:column;}
+    #sidebar{width:100%; height:auto; position:relative;}
+    #main{height:auto; padding:20px;}
+  }
+</style>
+</head>
+<body>
+
+<div id="sidebar">
+  <div class="logo">
+    <h1>NAC</h1>
+    <p>Nader Aboelwafa & Co.<br>Accounting & Tax Advisory</p>
+  </div>
+  <nav><ul id="navList"></ul></nav>
+</div>
+
+<div id="main">
+  <div id="content"></div>
+  <div class="nav-buttons">
+    <button onclick="goPrev()">◀ السابق</button>
+    <button onclick="goNext()">التالي ▶</button>
+  </div>
+</div>
+
+<script>
+const ICONS = {
+  cover: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>`,
+  law: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l-3 6a4 4 0 0 0 8 0l-3-6zM19 8l-3 6a4 4 0 0 0 8 0l-3-6z"/><path d="M5 8h14M5 21h14"/></svg>`,
+  coin: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 9.5c0-1.5 1.5-2 3-2s3 .8 3 2-1.5 1.7-3 2-3 .7-3 2 1.5 2 3 2 3-.5 3-2"/></svg>`,
+  doc: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5M9 13h6M9 17h6"/></svg>`,
+  shield: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>`,
+  chart: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21V9M9 21V3M15 21v-8M21 21V6"/></svg>`,
+  steps: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17h5v4H3zM10 11h5v10h-5zM17 5h4v16h-4z"/></svg>`,
+  building: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6M4 21h16"/></svg>`,
+  refresh: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7M21 4v5h-5"/></svg>`,
+  warning: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l10 18H2z"/><path d="M12 10v4M12 17h.01"/></svg>`,
+  check: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>`,
+  question: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-2.5 2-2.5 3.5M12 17h.01"/></svg>`,
+  calc: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/></svg>`,
+  clipboard: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="4" width="14" height="18" rx="2"/><path d="M9 4h6v3H9zM8 11h8M8 15h5"/></svg>`,
+  flag: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3v18"/><path d="M5 4h13l-3 4 3 4H5"/></svg>`
+};
+
+const sections = [
+{
+  id:'cover', title:'الغلاف', icon:'cover',
+  html:`<div class="cover">
+    <div class="badge">إصدار 2026</div>
+    <h1>ضريبة الأجور والمرتبات وما في حكمها<br>(ضريبة كسب العمل)</h1>
+    <div class="gold-line"></div>
+    <p>دليل مرجعي شامل وفقًا للتشريع المصري</p>
+    <p style="margin-top:40px;font-weight:bold;color:#1A1A1A;">NAC – Nader Aboelwafa & Co.</p>
+  </div>`
+},
+{
+  id:'disclaimer', title:'إخلاء المسؤولية', icon:'shield',
+  html:`<h2 class="section-title">${ICONS.shield} إخلاء المسؤولية</h2>
+  <div class="warning">
+  <ul>
+    <li>أُعِدّ هذا الدليل لأغراض التوعية المهنية والاسترشاد العملي فقط.</li>
+    <li>لا يُعَدّ بديلًا عن استشارة ضريبية أو قانونية متخصصة بشأن أي حالة فردية.</li>
+    <li>الأرقام والحدود الواردة قابلة للتعديل بقرارات تشريعية لاحقة، ويجب التحقق منها دوريًا.</li>
+  </ul>
+  </div>`
+},
+{
+  id:'intro', title:'المقدمة والإطار القانوني', icon:'law',
+  html:`<h2 class="section-title">${ICONS.law} المقدمة والإطار القانوني</h2>
+  <p>تُعد ضريبة الأجور والمرتبات وما في حكمها، والمعروفة باسم <b>ضريبة كسب العمل</b>، إحدى صور الضريبة على دخل الأشخاص الطبيعيين الناتج عن العمل لدى الغير، وتخضع لأحكام الباب الثالث من قانون الضريبة على الدخل رقم 91 لسنة 2005 وتعديلاته.</p>
+  <p>تقوم فلسفة الضريبة على مبدأ <b>الاستقطاع من المنبع</b>: يلتزم صاحب العمل بحساب الضريبة المستحقة، واستقطاعها، وتوريدها لمصلحة الضرائب المصرية.</p>
+  <h3>الإطار القانوني</h3>
+  <table>
+    <tr><th>المرجع</th><th>الموضوع</th></tr>
+    <tr><td>قانون 91 لسنة 2005</td><td>القانون الأساسي للضريبة على الدخل</td></tr>
+    <tr><td>اللائحة التنفيذية</td><td>تفصيل أحكام التطبيق</td></tr>
+    <tr><td>قانون 30 لسنة 2023</td><td>تعديل الشرائح والإعفاءات</td></tr>
+    <tr><td>قانون 7 لسنة 2024</td><td>رفع الإعفاء الشخصي والشريحة المعفاة</td></tr>
+    <tr><td>قانون 148 لسنة 2019</td><td>التأمينات الاجتماعية والمعاشات</td></tr>
+  </table>`
+},
+{
+  id:'official-data', title:'بيانات رسمية 2026 (محدّثة)', icon:'refresh',
+  html:`<h2 class="section-title">${ICONS.refresh} بيانات رسمية إضافية — تحديث 2026</h2>
+  <h3>نسبة اشتراك العامل في التأمينات الاجتماعية</h3>
+  <p>حدد القانون نسبة اشتراك موحدة يدفعها الموظف بنسبة <b>11% من إجمالي أجر الاشتراك</b>، بينما تتحمل المؤسسة نسبة <b>18.75%</b> من الأجر في القطاع الخاص.</p>
+  <h3>الحدود التأمينية لعام 2026</h3>
+  <table>
+    <tr><th>الحد</th><th>القيمة اعتبارًا من 1/1/2026</th></tr>
+    <tr><td>الحد الأدنى لأجر الاشتراك</td><td>2,700 جنيه</td></tr>
+    <tr><td>الحد الأقصى لأجر الاشتراك</td><td>16,700 جنيه</td></tr>
+  </table>
+  <div class="source">المصدر: الهيئة القومية للتأمين الاجتماعي، إعلان رفع الحدين الأدنى والأقصى لأجر الاشتراك التأميني اعتبارًا من 1 يناير 2026، تنفيذًا لقانون 148 لسنة 2019 ولائحته التنفيذية.</div>
+  <div class="note">هذه الحدود تُراجَع وتُرفَع سنويًا بقرار من الهيئة القومية للتأمين الاجتماعي، ويجب التحقق من آخر تحديث عند كل تطبيق فعلي.</div>`
+},
+{
+  id:'definition', title:'التعريف والأطراف', icon:'doc',
+  html:`<h2 class="section-title">${ICONS.doc} تعريف الضريبة والأطراف المخاطبة</h2>
+  <p>ضريبة تُفرض على كل مقابل نقدي أو عيني يحصل عليه العامل بسبب أو بمناسبة أداء عمله لدى الغير. تُحسب على أساس <b>سنوي</b>، وتُستقطع <b>شهريًا</b> تحت حساب الضريبة السنوية.</p>
+  <table>
+    <tr><th>الطرف</th><th>الدور</th></tr>
+    <tr><td>العامل (الممول)</td><td>يتحمل عبء الضريبة</td></tr>
+    <tr><td>صاحب العمل</td><td>يحسب، يستقطع، يورد، يحتفظ بالمستندات</td></tr>
+  </table>
+  <div class="note">المصطلح الموحد المستخدم في هذا الدليل: "ضريبة الأجور والمرتبات وما في حكمها (ضريبة كسب العمل)".</div>`
+},
+{
+  id:'scope', title:'نطاق الخضوع والإيرادات الخاضعة', icon:'building',
+  html:`<h2 class="section-title">${ICONS.building} نطاق الخضوع والإيرادات الخاضعة</h2>
+  <p>تخضع دخول الأشخاص الطبيعيين الناتجة عن العمل لدى الغير، سواء دائمًا أو مؤقتًا. المعيار الحاسم هو <b>حقيقة الإيراد لا اسمه</b>.</p>
+  <table>
+    <tr><th>العنصر</th><th>الموقف الضريبي</th></tr>
+    <tr><td>المرتب الأساسي</td><td>خاضع بالكامل</td></tr>
+    <tr><td>الأجر المتغير (حوافز، عمولات)</td><td>خاضع ما لم يُعفَ بنص</td></tr>
+    <tr><td>المكافآت</td><td>خاضعة متى ارتبطت بعلاقة العمل</td></tr>
+    <tr><td>البدلات</td><td>خاضعة كأصل، إلا بنص إعفاء صريح</td></tr>
+    <tr><td>الأرباح الموزعة على العاملين</td><td>خاضعة</td></tr>
+    <tr><td>المزايا العينية</td><td>خاضعة بعد تقييمها وفق اللائحة</td></tr>
+  </table>`
+},
+{
+  id:'exempt', title:'الإيرادات المعفاة', icon:'shield',
+  html:`<h2 class="section-title">${ICONS.shield} الإيرادات المعفاة من الضريبة</h2>
+  <h3>الإعفاء الشخصي</h3>
+  <p>20,000 جنيه سنويًا (قانون 7 لسنة 2024) — يُمنح مرة واحدة فقط عن السنة الضريبية.</p>
+  <h3>الشريحة المعفاة</h3>
+  <p>أول 40,000 جنيه من صافي الدخل السنوي.</p>
+  <div class="note"><b>الإجمالي المعفى فعليًا:</b> 60,000 جنيه سنويًا (40,000 + 20,000).</div>
+  <h3>إعفاءات بنص خاص</h3>
+  <p>توجد إيرادات ومزايا أخرى أُعفيت بنصوص خاصة، ولا يجوز إعمال أي إعفاء إلا بعد التحقق من توافر شروطه القانونية كاملة.</p>`
+},
+{
+  id:'insurance', title:'التأمينات والوعاء الضريبي', icon:'coin',
+  html:`<h2 class="section-title">${ICONS.coin} التأمينات الاجتماعية والوعاء الضريبي</h2>
+  <p>تُخصم حصة العامل فقط في التأمينات الاجتماعية (قانون 148 لسنة 2019)، بنسبة <b>11%</b> من الأجر التأميني، ضمن الحدين الأدنى (2,700 جنيه) والأقصى (16,700 جنيه) لعام 2026، قبل احتساب الضريبة.</p>
+  <h3>تسلسل تحديد الوعاء الضريبي (إلزامي الترتيب)</h3>
+  <ol>
+    <li>إجمالي الإيراد الخاضع</li>
+    <li>استبعاد الإيرادات المعفاة بنص</li>
+    <li>خصم اشتراك التأمينات (11% من الأجر التأميني، بحد أقصى 16,700 جنيه شهريًا)</li>
+    <li>خصم الإعفاء الشخصي</li>
+    <li>تطبيق الشريحة المعفاة (40,000)</li>
+    <li>= صافي الوعاء الضريبي</li>
+  </ol>
+  <div class="warning">${ICONS.warning} تغيير هذا الترتيب يؤدي إلى نتائج ضريبية غير صحيحة.</div>`
+},
+{
+  id:'brackets', title:'الشرائح الضريبية', icon:'chart',
+  html:`<h2 class="section-title">${ICONS.chart} الشرائح الضريبية التصاعدية</h2>
+  <p>تُطبَّق النسبة على الجزء الواقع داخل كل شريحة فقط، ولا تمتد إلى كامل الوعاء.</p>
+  <svg viewBox="0 0 700 340" style="width:100%; max-width:700px; margin:20px 0;">
+    <line x1="230" y1="15" x2="230" y2="325" stroke="#ccc" stroke-width="1"/>
+    <text x="220" y="35" text-anchor="end" font-size="13" fill="#333">حتى 40,000</text>
+    <rect x="230" y="20" width="4" height="24" fill="#e0e0e0"/>
+    <text x="240" y="37" font-size="13" fill="#999">معفى (0%)</text>
+    <text x="220" y="75" text-anchor="end" font-size="13" fill="#333">40,001–55,000</text>
+    <rect x="230" y="60" width="145" height="24" fill="#D4A017"/>
+    <text x="382" y="77" font-size="13" fill="#333" font-weight="bold">10%</text>
+    <text x="220" y="115" text-anchor="end" font-size="13" fill="#333">55,001–70,000</text>
+    <rect x="230" y="100" width="218" height="24" fill="#D4A017"/>
+    <text x="455" y="117" font-size="13" fill="#333" font-weight="bold">15%</text>
+    <text x="220" y="155" text-anchor="end" font-size="13" fill="#333">70,001–200,000</text>
+    <rect x="230" y="140" width="290" height="24" fill="#B8860B"/>
+    <text x="527" y="157" font-size="13" fill="#333" font-weight="bold">20%</text>
+    <text x="220" y="195" text-anchor="end" font-size="13" fill="#333">200,001–400,000</text>
+    <rect x="230" y="180" width="327" height="24" fill="#B8860B"/>
+    <text x="564" y="197" font-size="13" fill="#333" font-weight="bold">22.5%</text>
+    <text x="220" y="235" text-anchor="end" font-size="13" fill="#333">400,001–1,200,000</text>
+    <rect x="230" y="220" width="364" height="24" fill="#1A1A1A"/>
+    <text x="601" y="237" font-size="13" fill="#333" font-weight="bold">25%</text>
+    <text x="220" y="275" text-anchor="end" font-size="13" fill="#333">أكثر من 1,200,000</text>
+    <rect x="230" y="260" width="400" height="24" fill="#1A1A1A"/>
+    <text x="637" y="277" font-size="13" fill="#333" font-weight="bold">27.5%</text>
+    <text x="230" y="315" font-size="12" fill="#888">طول الشريط يعكس نسبة الضريبة على الجزء الواقع داخل كل شريحة</text>
+  </svg>
+  <table>
+    <tr><th>صافي الدخل السنوي (جنيه)</th><th>سعر الضريبة</th></tr>
+    <tr><td>حتى 40,000</td><td>معفى</td></tr>
+    <tr><td>أكثر من 40,000 حتى 55,000</td><td>10%</td></tr>
+    <tr><td>أكثر من 55,000 حتى 70,000</td><td>15%</td></tr>
+    <tr><td>أكثر من 70,000 حتى 200,000</td><td>20%</td></tr>
+    <tr><td>أكثر من 200,000 حتى 400,000</td><td>22.5%</td></tr>
+    <tr><td>أكثر من 400,000 حتى 1,200,000</td><td>25%</td></tr>
+    <tr><td>ما يزيد على 1,200,000</td><td>27.5%</td></tr>
+  </table>`
+},
+{
+  id:'steps', title:'خطوات الاحتساب', icon:'steps',
+  html:`<h2 class="section-title">${ICONS.steps} خطوات احتساب الضريبة</h2>
+  <svg viewBox="0 0 700 720" style="width:100%; max-width:560px; margin:10px auto; display:block;">
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="#B8860B"/>
+      </marker>
+    </defs>
+    <rect x="150" y="10" width="400" height="60" rx="10" fill="#1A1A1A"/>
+    <text x="350" y="45" text-anchor="middle" fill="#D4A017" font-size="15" font-weight="bold">1. تحديد إجمالي الأجر السنوي</text>
+    <line x1="350" y1="70" x2="350" y2="98" stroke="#B8860B" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="150" y="100" width="400" height="60" rx="10" fill="#FFF8E1" stroke="#D4A017" stroke-width="2"/>
+    <text x="350" y="135" text-anchor="middle" fill="#1A1A1A" font-size="15">2. استبعاد العناصر المعفاة</text>
+    <line x1="350" y1="160" x2="350" y2="188" stroke="#B8860B" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="150" y="190" width="400" height="60" rx="10" fill="#FFF8E1" stroke="#D4A017" stroke-width="2"/>
+    <text x="350" y="220" text-anchor="middle" fill="#1A1A1A" font-size="14">3. خصم اشتراك التأمينات</text>
+    <text x="350" y="238" text-anchor="middle" fill="#666" font-size="11">(11% من الأجر التأميني، سقف 16,700 جنيه)</text>
+    <line x1="350" y1="250" x2="350" y2="278" stroke="#B8860B" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="150" y="280" width="400" height="60" rx="10" fill="#FFF8E1" stroke="#D4A017" stroke-width="2"/>
+    <text x="350" y="315" text-anchor="middle" fill="#1A1A1A" font-size="15">4. خصم الإعفاء الشخصي (20,000)</text>
+    <line x1="350" y1="340" x2="350" y2="368" stroke="#B8860B" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="150" y="370" width="400" height="60" rx="10" fill="#1A1A1A"/>
+    <text x="350" y="405" text-anchor="middle" fill="#D4A017" font-size="15" font-weight="bold">5. صافي الوعاء الضريبي</text>
+    <line x1="350" y1="430" x2="350" y2="458" stroke="#B8860B" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="150" y="460" width="400" height="60" rx="10" fill="#FFF8E1" stroke="#D4A017" stroke-width="2"/>
+    <text x="350" y="495" text-anchor="middle" fill="#1A1A1A" font-size="15">6. توزيع الوعاء على الشرائح</text>
+    <line x1="350" y1="520" x2="350" y2="548" stroke="#B8860B" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="150" y="550" width="400" height="60" rx="10" fill="#FFF8E1" stroke="#D4A017" stroke-width="2"/>
+    <text x="350" y="585" text-anchor="middle" fill="#1A1A1A" font-size="15">7. جمع الضريبة الناتجة عن كل شريحة</text>
+    <line x1="350" y1="610" x2="350" y2="638" stroke="#B8860B" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="150" y="640" width="400" height="70" rx="10" fill="#1A1A1A"/>
+    <text x="350" y="670" text-anchor="middle" fill="#D4A017" font-size="15" font-weight="bold">8. الضريبة السنوية ÷ 12</text>
+    <text x="350" y="695" text-anchor="middle" fill="#fff" font-size="12">= الضريبة الشهرية المستقطعة</text>
+  </svg>`
+},
+{
+  id:'obligations', title:'التزامات صاحب العمل', icon:'clipboard',
+  html:`<h2 class="section-title">${ICONS.clipboard} التزامات صاحب العمل</h2>
+  <table>
+    <tr><th>الالتزام</th><th>المضمون</th></tr>
+    <tr><td>حساب الضريبة</td><td>لكل عامل وفق أحكام القانون</td></tr>
+    <tr><td>الاستقطاع</td><td>عند صرف الأجر</td></tr>
+    <tr><td>التوريد</td><td>لمصلحة الضرائب في المواعيد القانونية</td></tr>
+    <tr><td>النماذج والإقرارات</td><td>عبر منظومة توحيد المعايير</td></tr>
+    <tr><td>حفظ المستندات</td><td>مفردات المرتبات وكشوفها ومستندات التأمينات</td></tr>
+  </table>`
+},
+{
+  id:'settlement', title:'التسوية السنوية والحالات الخاصة', icon:'refresh',
+  html:`<h2 class="section-title">${ICONS.refresh} التسوية السنوية والحالات الخاصة</h2>
+  <p>تُجرى التسوية عند: زيادة الأجر، صرف مكافأة استثنائية، التعيين أو انتهاء الخدمة أثناء السنة، أو انتقال العامل لجهة عمل أخرى.</p>
+  <table>
+    <tr><th>الحالة</th><th>المعالجة</th></tr>
+    <tr><td>موظف بجهتين</td><td>الإعفاء الشخصي لدى جهة واحدة فقط</td></tr>
+    <tr><td>تعيين منتصف السنة</td><td>حساب عن الفترة الفعلية فقط</td></tr>
+    <tr><td>انتهاء الخدمة</td><td>تسوية فورية عند إخلاء الطرف</td></tr>
+    <tr><td>Bonus / عمولات</td><td>تُضاف لوعاء شهر الصرف</td></tr>
+    <tr><td>مزايا عينية</td><td>تُقيَّم نقديًا وتُضاف للوعاء</td></tr>
+    <tr><td>مدير الشركة</td><td>نفس القواعد العامة</td></tr>
+    <tr><td>عضو مجلس إدارة</td><td>يستلزم تكييف العلاقة أولًا</td></tr>
+  </table>
+  <div class="warning">${ICONS.warning} <b>تنبيه مهني — حالة الجهتين:</b> توزيع الشريحة المعفاة الأولى (40,000 جنيه) بين جهتي عمل في نفس الوقت غير منصوص عليه بشكل قاطع وموحد في التطبيق العملي، ويخضع لتعليمات مصلحة الضرائب وآلية التسوية النهائية. يُنصح بعدم الجزم برقم نهائي في هذه الحالة تحديدًا قبل الرجوع لأحدث التعليمات الرسمية.</div>`
+},
+{
+  id:'errors', title:'الأخطاء الشائعة وأفضل الممارسات', icon:'warning',
+  html:`<h2 class="section-title">${ICONS.warning} الأخطاء الشائعة وأفضل الممارسات</h2>
+  <h3>أبرز الأخطاء</h3>
+  <ul>
+    <li>احتساب الضريبة على الإجمالي دون استبعاد المعفى</li>
+    <li>تطبيق نسبة شريحة واحدة على كامل الدخل</li>
+    <li>عدم خصم التأمينات قبل تحديد الوعاء</li>
+    <li>منح الإعفاء الشخصي أكثر من مرة</li>
+    <li>اعتبار بدلات معفاة دون سند قانوني</li>
+  </ul>
+  <h3>أفضل الممارسات</h3>
+  <ul>
+    <li>متابعة التعديلات التشريعية دوريًا</li>
+    <li>الاعتماد على نماذج مصلحة الضرائب الرسمية</li>
+    <li>مراجعة شهرية للضريبة المستقطعة</li>
+    <li>ملف ضريبي مستقل لكل عامل</li>
+    <li>تحديث برامج الرواتب فور صدور تعديل، بما في ذلك الحدود التأمينية السنوية الجديدة</li>
+  </ul>`
+},
+{
+  id:'faq', title:'الأسئلة الشائعة', icon:'question',
+  html:`<h2 class="section-title">${ICONS.question} الأسئلة الشائعة (FAQ)</h2>
+  <div class="faq-item"><strong>هل الضريبة على المرتب الأساسي فقط؟</strong><p>لا، على إجمالي الإيراد الخاضع بكل عناصره.</p></div>
+  <div class="faq-item"><strong>هل تُخصم التأمينات قبل الضريبة؟</strong><p>نعم، حصة العامل فقط بنسبة 11% من الأجر التأميني.</p></div>
+  <div class="faq-item"><strong>هل تُحسب الضريبة شهريًا أم سنويًا؟</strong><p>سنويًا كأساس، وتُستقطع شهريًا تحت الحساب.</p></div>
+  <div class="faq-item"><strong>هل يُمنح الإعفاء الشخصي لدى جهتين؟</strong><p>لا، مرة واحدة فقط عن السنة الضريبية.</p></div>
+  <div class="faq-item"><strong>هل جميع البدلات معفاة؟</strong><p>لا، إلا بنص قانوني صريح.</p></div>
+  <div class="faq-item"><strong>من المسؤول عن سداد الضريبة؟</strong><p>العامل مكلف أصلي، وصاحب العمل يحصّل ويورد.</p></div>`
+},
+{
+  id:'examples', title:'الأمثلة العملية', icon:'calc',
+  html:`<h2 class="section-title">${ICONS.calc} مثال تطبيقي كامل (بأرقام موثقة)</h2>
+  <p><b>موظف بجهة عمل واحدة، مرتب شهري 20,000 جنيه</b></p>
+  <table>
+    <tr><th>البند</th><th>القيمة</th></tr>
+    <tr><td>الأجر التأميني (بعد سقف 16,700)</td><td>16,700 جنيه</td></tr>
+    <tr><td>اشتراك العامل الشهري (11%)</td><td>1,837 جنيه</td></tr>
+    <tr><td>اشتراك العامل السنوي</td><td>22,044 جنيه</td></tr>
+    <tr><td>صافي الإيراد السنوي (240,000 − 22,044)</td><td>217,956 جنيه</td></tr>
+    <tr><td>بعد خصم الإعفاء الشخصي</td><td><b>197,956 جنيه = صافي الوعاء</b></td></tr>
+  </table>
+  <table>
+    <tr><th>الشريحة</th><th>المبلغ</th><th>النسبة</th><th>الضريبة</th></tr>
+    <tr><td>حتى 40,000</td><td>40,000</td><td>معفى</td><td>0</td></tr>
+    <tr><td>40,001–55,000</td><td>15,000</td><td>10%</td><td>1,500</td></tr>
+    <tr><td>55,001–70,000</td><td>15,000</td><td>15%</td><td>2,250</td></tr>
+    <tr><td>70,001–197,956</td><td>127,956</td><td>20%</td><td>25,591.20</td></tr>
+    <tr><td><b>الإجمالي</b></td><td></td><td></td><td><b>29,341.20</b></td></tr>
+  </table>
+  <div class="note">الضريبة الشهرية = 29,341.20 ÷ 12 = <b>2,445.10 جنيه</b><br>صافي المرتب الشهري = 20,000 − 1,837 (تأمينات) − 2,445.10 (ضريبة) = <b>15,717.90 جنيه</b></div>
+  <div class="source">مبني على: نسبة اشتراك 11% وسقف أجر تأميني 16,700 جنيه (الهيئة القومية للتأمين الاجتماعي، سريان 1/1/2026) + الإعفاء الشخصي والشرائح (قانون 7/2024).</div>`
+},
+{
+  id:'checklist', title:'Checklist', icon:'clipboard',
+  html:`<h2 class="section-title">${ICONS.clipboard} قائمة المراجعة (Payroll Checklist)</h2>
+  <div class="checklist">
+    <label><input type="checkbox"> مراجعة بيانات العامل والرقم التأميني</label>
+    <label><input type="checkbox"> مراجعة كل عناصر الأجر وسندها القانوني</label>
+    <label><input type="checkbox"> خصم التأمينات (11%، سقف 16,700 جنيه) ثم الإعفاء الشخصي بالترتيب الصحيح</label>
+    <label><input type="checkbox"> تطبيق الشرائح التصاعدية بشكل صحيح</label>
+    <label><input type="checkbox"> مطابقة صافي المرتب مع كشف الصرف البنكي</label>
+    <label><input type="checkbox"> حفظ كل المستندات المؤيدة</label>
+    <label><input type="checkbox"> التحقق من الحدود التأمينية المحدثة في بداية كل سنة</label>
+  </div>`
+},
+{
+  id:'conclusion', title:'الخاتمة والمراجع', icon:'flag',
+  html:`<h2 class="section-title">${ICONS.flag} الخاتمة والمراجع القانونية</h2>
+  <p>الالتزام بالنصوص القانونية والتعليمات الرسمية الصادرة عن مصلحة الضرائب المصرية والهيئة القومية للتأمين الاجتماعي هو الركيزة الأساسية لضمان سلامة الموقف الضريبي وتجنب المنازعات والفروق الضريبية.</p>
+  <h3>المراجع القانونية</h3>
+  <ul>
+    <li>قانون الضريبة على الدخل رقم 91 لسنة 2005 وتعديلاته</li>
+    <li>القانون رقم 30 لسنة 2023</li>
+    <li>القانون رقم 7 لسنة 2024</li>
+    <li>قانون التأمينات الاجتماعية والمعاشات رقم 148 لسنة 2019</li>
+    <li>قرار الهيئة القومية للتأمين الاجتماعي بشأن الحدين الأدنى والأقصى لأجر الاشتراك (سريان 1/1/2026)</li>
+    <li>التعليمات والكتب الدورية الصادرة عن مصلحة الضرائب المصرية</li>
+  </ul>`
+}
+];
+
+let current = 0;
+const navList = document.getElementById('navList');
+const content = document.getElementById('content');
+
+sections.forEach((s, i) => {
+  const li = document.createElement('li');
+  li.innerHTML = (ICONS[s.icon] || '') + '<span>' + s.title + '</span>';
+  li.onclick = () => showSection(i);
+  li.id = 'nav-' + i;
+  navList.appendChild(li);
+});
+
+function showSection(i){
+  current = i;
+  content.innerHTML = sections[i].html;
+  document.querySelectorAll('#navList li').forEach((li,idx)=>{
+    li.classList.toggle('active', idx===i);
+  });
+  document.getElementById('main').scrollTop = 0;
+}
+function goNext(){ if(current < sections.length-1) showSection(current+1); }
+function goPrev(){ if(current > 0) showSection(current-1); }
+
+showSection(0);
+</script>
+</body>
+</html>
